@@ -84,3 +84,36 @@ body, html {
 		background-size: contain;
 	}
 }
+
+
+.bg {
+	-webkit-animation: fadein 250ms ease-in-out;
+	-moz-animation: fadein 250ms ease-in-out;
+	-o-animation: fadein 250ms ease-in-out;
+	animation: fadein 250ms ease-in-out;
+}
+@keyframes fadein {
+  0% {
+		opacity: 0;
+  }
+	100% {
+		opacity: 1;
+	}
+}
+
+.banner {
+	-webkit-animation: zoom 250ms ease-in-out;
+	-moz-animation: zoom 250ms ease-in-out;
+	-o-animation: zoom 250ms ease-in-out;
+	animation: zoom 250ms ease-in-out;
+}
+@keyframes zoom {
+  0% {
+		opacity: 0;
+		transform: scale(0.5);
+  }
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
