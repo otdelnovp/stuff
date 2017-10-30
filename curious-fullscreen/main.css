@@ -1,5 +1,5 @@
-body {
-	background: #000;
+body, html {
+	background: transparent;
 }
 .wrapper {
 	position: fixed;
@@ -8,9 +8,6 @@ body {
 	padding: 32px 12px 12px;
 	width: 100%;
 	height: 100%;
-	background: #000 url(bg_mobile.jpg) 50% 0 no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
 }
 .close {
 	position: absolute;
@@ -24,11 +21,66 @@ body {
 	background-size: auto 50%;
 	cursor: pointer;
 }
-.banner {
-	position: relative;
+.bg {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000 url(7_plus.jpg) 50% 0 no-repeat;
+	background: #000 url(bg_mobile.jpg) 50% 0 no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+.banner {
+	position: relative;
+	z-index: 10;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	background: url(4.jpg) 50% 0 no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+@media (max-width: 414px) {
+	.banner { background-image: url(7_plus.jpg) }
+}
+
+@media (max-width: 375px) {
+	.banner { background-image: url(7.jpg) }
+}
+
+@media (max-width: 360px) {
+	.banner { background-image: url(android.jpg) }
+}
+
+@media (max-width: 320px) {
+	.banner { background-image: url(5.jpg) }
+
+	@media (max-height: 380px) {
+		.banner { background-image: url(4.jpg) }
+	}
+}
+
+
+@media (min-width: 415px) {
+	.wrapper {
+		padding: 64px;
+	}
+	.bg {
+		background-image: url(bg_desktop.jpg);
+		-webkit-background-size: auto 100%;
+		background-size: auto 100%;
+	}
+	.close {
+		top: 12px;
+		right: 12px;
+	}
+	.banner {
+		background-image: url(desktop.jpg);
+		-webkit-background-size: contain;
+		background-size: contain;
+	}
 }
