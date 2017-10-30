@@ -1,0 +1,139 @@
+html,
+body {
+	font-size: 10px;
+	width: 100%;
+	height: 100%;
+	background: url(https://t-ec.bstatic.com/images/hotel/max1024x768/184/18473835.jpg) center no-repeat;
+	background-size: cover;
+}
+
+#view {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+/****/
+
+.cloud {
+	position: relative;
+	font-size: 0.07rem;
+	width: 100em;
+	height: 100em;
+}
+
+.cloud_item {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -5em;
+	width: 10em;
+	height: 10em;
+	filter: blur(2.5em);
+	background: #005562;
+	border-radius: 50%;
+	opacity: 0;
+}
+
+
+/* position */
+
+.cloud_pos1 { top: 10%; left: 40%; width: 25em; height: 25em; }
+.cloud_pos2 { top: 30%; left: 20%; width: 15em; height: 15em; }
+.cloud_pos3 { top: 30%; left: 60%; width: 10em; height: 10em; }
+.cloud_pos4 { top: 70%; left: 20%; }
+.cloud_pos5 { top: 90%; left: 40%; width: 5em; height: 5em; }
+.cloud_pos6 { top: 60%; left: 60%; }
+.cloud_pos7 { top: 90%; left: 50%; width: 15em; height: 15em; }
+.cloud_pos8 { top: 50%; left: 20%; width: 15em; height: 15em; }
+.cloud_pos9 { top: 30%; left: 20%; }
+.cloud_pos10 { top: 56%; left: 86%; width: 5em; height: 5em; }
+.cloud_pos11 { top: 45%; left: 60%; width: 15em; height: 15em; }
+.cloud_pos12 { top: 97%; left: 20%; width: 5em; height: 5em; }
+.cloud_pos13 { top: 68%; left: 70%; }
+.cloud_pos14 { top: 23%; left: 40%; width: 5em; height: 5em; }
+.cloud_pos15 { top: 43%; left: 45%; width: 20em; height: 20em; }
+.cloud_pos16 { top: 60%; left: 35%; }
+.cloud_pos17 { top: 53%; left: 34%; width: 20em; height: 20em; }
+.cloud_pos18 { top: 50%; left: 23%; }
+.cloud_pos19 { top: 40%; left: 75%; width: 15em; height: 15em; }
+.cloud_pos20 { top: 60%; left: 54%; }
+.cloud_pos21 { top: 98%; left: 56%; width: 15em; height: 15em; }
+.cloud_pos22 { top: 65%; left: 86%; width: 5em; height: 5em; }
+.cloud_pos23 { top: 65%; left: 43%; width: 20em; height: 20em; }
+.cloud_pos24 { top: 97%; left: 75%; }
+.cloud_pos25 { top: 76%; left: 45%; width: 15em; height: 15em; }
+.cloud_pos26 { top: 23%; left: 32%; width: 12em; height: 13em; }
+.cloud_pos27 { top: 34%; left: 75%; }
+.cloud_pos28 { top: 57%; left: 68%; width: 5em; height: 5em; }
+.cloud_pos29 { top: 30%; left: 43%; }
+.cloud_pos30 { top: 64%; left: 23%; width: 15em; height: 14em; }
+.cloud_pos31 { top: 10%; left: 53%; }
+.cloud_pos32 { top: 34%; left: 43%; }
+.cloud_pos33 { top: 23%; left: 64%; width: 12em; height: 13em; }
+.cloud_pos34 { top: 56%; left: 56%; }
+.cloud_pos35 { top: 70%; left: 86%; width: 15em; height: 14em; }
+.cloud_pos36 { top: 97%; left: 32%; }
+.cloud_pos37 { top: 87%; left: 43%; width: 15em; height: 15em; }
+.cloud_pos38 { top: 76%; left: 57%; }
+.cloud_pos39 { top: 56%; left: 75%; width: 15em; height: 13em; }
+.cloud_pos40 { top: 54%; left: 86%; width: 20em; height: 20em; }
+
+
+/* animate */
+
+.cloud_item {
+	animation-name: boom;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(.53,.34,.53,.72);
+}
+
+.cloud_anim1 {
+	animation-duration: 0.9s;
+	animation-delay: 0.2s;
+}
+.cloud_anim2 {
+	animation-duration: 0.7s;
+	animation-delay: 0.2s;
+}
+.cloud_anim3 {
+	animation-duration: 0.9s;
+	animation-delay: 0.2s;
+}
+.cloud_anim4 {
+	animation-duration: 0.8s;
+}
+.cloud_anim5 {
+	animation-duration: 0.5s;
+	animation-delay: 0.5s;
+}
+.cloud_anim6 {
+	animation-duration: 0.9s;
+	animation-delay: 0.1s;
+}
+.cloud_anim7 {
+	animation-duration: 0.6s;
+}
+.cloud_anim8 {
+	animation-duration: 0.4s;
+	animation-delay: 0.3s;
+}
+.cloud_anim9 {
+	animation-duration: 0.7s;
+	animation-delay: 0.2s;
+}
+
+@keyframes boom {
+  0%, 100% {
+		opacity: 0;
+		transform: scale(0.5);
+  }
+	33%, 66% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(2);
+	}
+}

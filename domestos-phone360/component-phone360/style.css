@@ -1,0 +1,134 @@
+.phone360 {
+	position: relative;
+	width: 18.5rem;
+	height: 23rem;
+	color: #fff;
+	background: #d2353a;
+}
+
+.phone360_title {
+	position: absolute;
+	margin: 1rem 0 0 1.2rem;
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	font-family: 'Gotham Pro', sans-serif;
+	font-weight: 300;
+	white-space: nowrap;
+}
+
+.phone360_aria {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 65%;
+	-webkit-perspective: 22rem;
+	-moz-perspective: 22rem;
+	-o-perspective: 22rem;
+	perspective: 22rem;
+}
+
+.phone360_icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 6rem;
+	height: 10rem;
+	margin: -5rem -3rem;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.phone360_icon div {
+	display: block;
+	box-sizing: border-box;
+	position: relative;
+	z-index: 2;
+  margin: 0;
+	width: 100%;
+	height: 100%;
+  display: block;
+  position: absolute;
+  border: 3px solid #fff;
+	-webkit-border-radius: 1.3rem;
+	-moz-border-radius: 1.3rem;
+	border-radius: 1.3rem;
+	text-align: center;
+	background: #d2353a;
+}
+
+.phone360_icon .back {
+	z-index: 1;
+	-webkit-transform: rotateX( -180deg ) translateZ( 1rem );
+	-moz-transform: rotateX( -180deg ) translateZ( 1rem );
+	-o-transform: rotateX( -180deg ) translateZ( 1rem );
+	transform: rotateX( -180deg ) translateZ( 1rem );
+}
+
+
+.phone360_icon .front:before {
+	content: '';
+	position: absolute;
+	bottom: 0.35rem;
+	left: 50%;
+	margin: 0 0 0 -0.4rem;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: #fff;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.phone360_icon .front:after {
+	content: '';
+	position: absolute;
+	top: 1.2rem;
+	bottom: 1.5rem;
+	left: 0;
+	width: 100%;
+	border: 0 solid #fff;
+	border-width: 3px 0 3px;
+}
+
+
+.phone360_icon {
+	-webkit-animation: phone360rotate 7s cubic-bezier(.53,.34,.53,.72) Infinite;
+	-moz-animation: phone360rotate 7s cubic-bezier(.53,.34,.53,.72) Infinite;
+	-o-animation: phone360rotate 7s cubic-bezier(.53,.34,.53,.72) Infinite;
+	animation: phone360rotate 7s cubic-bezier(.53,.34,.53,.72) Infinite;
+}
+
+@keyframes phone360rotate {
+  0%, 100% {
+		-webkit-transform: rotateX( 30deg ) translateZ( 3rem );
+		-moz-transform: rotateX( 30deg ) translateZ( 3rem );
+		-o-transform: rotateX( 30deg ) translateZ( 3rem );
+		transform: rotateX( 30deg ) translateZ( 3rem );
+  }
+	9%, 41%, 73% {
+		-webkit-transform: rotateX( 44deg ) translateZ( 2rem );
+		-moz-transform: rotateX( 44deg ) translateZ( 2rem );
+		-o-transform: rotateX( 44deg ) translateZ( 2rem );
+		transform: rotateX( 44deg ) translateZ( 2rem );
+	}
+  25% {
+		-webkit-transform: translateX( -3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( -40deg );
+		-moz-transform: translateX( -3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( -40deg );
+		-o-transform: translateX( -3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( -40deg );
+		transform: translateX( -3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( -40deg );
+  }
+  57% {
+		-webkit-transform: translateX( 3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( 40deg );
+		-moz-transform: translateX( 3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( 40deg );
+		-o-transform: translateX( 3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( 40deg );
+		transform: translateX( 3rem ) translateZ( 2rem ) rotateX( 35deg ) rotateZ( 40deg );
+  }
+	89% {
+		-webkit-transform: rotateX( -5deg ) translateY( -2rem ) translateZ( 3rem );
+		-moz-transform: rotateX( -5deg ) translateY( -2rem ) translateZ( 3rem );
+		-o-transform: rotateX( -5deg ) translateY( -2rem ) translateZ( 3rem );
+		transform: rotateX( -5deg ) translateY( -2rem ) translateZ( 3rem );
+  }
+}

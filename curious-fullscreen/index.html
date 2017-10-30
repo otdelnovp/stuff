@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+	<style>
+	body {
+		background: #000;
+	}
+	.wrapper {
+		margin: 0 auto;
+		max-width: 414px;
+	}
+	.wrapper img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.wrapper video {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	</style>
+	<title>Curious - video preview</title>
+</head>
+<body>
+	<div class="wrapper">
+		<img src="top.jpg" alt="">
+		<video class="video" autoplay muted loop playsinline>
+			<source src="movie.mp4?4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"' />
+		</video>
+		<img src="bottom.jpg" alt="">
+	</div>
+</body>
+</html>
