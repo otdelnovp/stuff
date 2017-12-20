@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+}
+
+#ad {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#banner {
+    width: 320px;
+    height: 232px;
+    display: block;
+    position: absolute;
+    visibility: visible;
+    background-color: black;
+    cursor: pointer;
+}
+/*
+#border {
+    width: 298px;
+    height: 248px;
+    display: block;
+    position: absolute;
+    border: solid 1px #e1e1e1;
+}
+*/
+#fond {
+    background: url(images/fond.jpg);
+    -webkit-transition: opacity 1s linear 0s;
+    transition: opacity 1s linear 0s;
+}
+
+#logo {
+    background: url(images/logo.png);
+    -webkit-transition: opacity 1s linear 0.5s;
+    transition: opacity 1s linear 0.5s;
+}
+
+#claim {
+    background: url(images/claim.png);
+    -webkit-transition: opacity 1s linear 1s;
+    transition: opacity 1s linear 1s;
+}
+
+#cta {
+    background: url(images/cta.png);
+    -webkit-transition: opacity 1s linear 1.5s;
+    transition: opacity 1s linear 1.5s;
+}
+
+.fullHidden {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
