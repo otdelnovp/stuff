@@ -37,7 +37,7 @@ body, html {
 	margin: 0 auto;
 	width: 296px;
 	height: 327px;
-	background: url(d.jpg) 50% 50% no-repeat;
+	background: url(deskt.jpg) 50% 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -52,7 +52,7 @@ body, html {
 		width: 296px;
 		height: 414px;
 		max-height: 88%;
-		background-image: url(m.jpg);
+		background-image: url(mob.jpg);
 	}
 }
 
