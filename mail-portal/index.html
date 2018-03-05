@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>mail portal</title>
+
+<link rel="stylesheet" href="portal.css">
+
+</head>
+<body>
+
+<div class="portal-header clearfix">
+	<div style="height: 28px">
+		<script src="//ad.mail.ru/adj/3355"></script>
+		<script src="//r.mail.ru/rb/3846?preview=8"></script>
+	</div>
+	<noindex><div class="portal-menu"><a href="//deti.mail.ru/" class="portal-menu__logo" title="Дети Mail.ru"><img src="http://deti.mail.ru/img/logotype-deti.png" srcset="http://deti.mail.ru/img/logotype-deti@2x.png 2x" alt="Дети Mail.ru"></a></div></noindex>
+</div>
+
+<script type="text/javascript" src="mobile-detect.min.js"></script>
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+	var md = new MobileDetect(window.navigator.userAgent);
+	if(md.mobile()) { document.body.className = "mobile"; }
+});
+</script>
+
+</body>
+</html>
